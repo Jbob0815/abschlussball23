@@ -22,9 +22,13 @@ body{
     height: 100%;
 }
 
-.heading {
+.head {
     margin-top: 3rem;
     font-size: 3rem;
+}
+
+.heading {
+    text-shadow: hsl(231, 94%, 65%) 0 0 40px;
 }
 
 .info {
@@ -49,23 +53,3 @@ body{
     padding: 2rem;
 }
 
-.line {
-    width: 100%;
-    height: 2rem;
-    background: white;
-}
-.line::after  {
-    content: "";
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    background: none;
-    z-index: -1;
-    box-shadow: powderblue 20px 20px 60px;
-}
-
-.rver {
-    width: 100px;
-    height: 4rem;
-    margin-left: 100%;
-}
