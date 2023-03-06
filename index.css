@@ -57,16 +57,32 @@ body{
     padding: 30px;
 }
 
-.info {
-    height: 30vh;
-    text-align: left;
-}
-
-.age {
+.kasten{
     height: 30vh;
     background: hsla(0,0%,100%,10%);
     backdrop-filter: blur(1rem);
     border-radius: 2rem;
+}
+
+.info {
+    height: 30vh;
+    text-align: left;
+}    
+
+.pdf{
+    height: auto;
+    width: 50%;
+    background: hsla(0, 100%, 74%, 0.1);
+}
+
+.age {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    /* height: 30vh; */
 }
 
 .survey {
@@ -78,8 +94,7 @@ body{
     width: 100%;
     margin-top: 4rem;
     font-size: 2rem;
-    border-radius: 2rem;
-    background: hsl(298, 70%, 60%);
+    background: hsla(224, 70%, 60%, 0.253);
 }
 
 .footer {
@@ -115,8 +130,7 @@ body{
     width: max-content;
     padding: 1rem;
     height: max-content;
-    background: hsla(255,0%,40%,10%);
-    backdrop-filter: blur(0.1rem);
+    background: hsla(204, 100%, 34%, 0.349);
     border-radius: 1rem;
     text-align: center;
     align-items: center;
