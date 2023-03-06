@@ -1,14 +1,15 @@
-@font-face {
-    font-family: Consolas;
-    src: url("");
-}
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Roboto+Condensed:wght@700&display=swap');
 * {
-    font-family: Consolas,sans-serif;
+    font-family:  Arial, sans-serif;
 
     margin: 0;
     padding: 0;
     color: white;
     text-decoration: none;
+}
+
+html {
+    height: 100vw;
 }
 
 body{
@@ -17,7 +18,7 @@ body{
     background-size: cover;
     width: 100vw;
     overflow-x: clip;
-    height: 100vh;
+    height: max(100vh,max-content);
 
 }
 .main{
@@ -36,23 +37,49 @@ body{
 
 .heading {
     text-shadow: hsl(231, 94%, 65%) 0 0 40px;
-    font-size: max(min(8vw,9rem),3rem);
+    font-size: max(min(8vw,7rem),3rem);
+}
+
+.mainpart {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+.left {
+    width: 50%;
+    height: max-content;
+}
+
+.right {
+    width: 50%;
+    height: max-content;
+    padding: 30px;
 }
 
 .info {
-    height: 40vh;
+    height: 30vh;
+    text-align: left;
 }
 
 .age {
-    height: 10vh;
+    height: 30vh;
+    background: hsla(0,0%,100%,10%);
+    backdrop-filter: blur(1rem);
+    border-radius: 2rem;
 }
 
 .survey {
     display: flex;
-    justify-content: center;
-    height: 20vh;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    margin-top: 4rem;
     font-size: 2rem;
+    border-radius: 2rem;
+    background: hsl(298, 70%, 60%);
 }
 
 .footer {
@@ -63,13 +90,23 @@ body{
     padding: 2rem;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
 
     body{
-        background: blue;
+
     }
     .info {
         padding-inline: 20px;
+    }
+    .mainpart{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left ,.right {
+        width: 80%;
+    }
+    .survey {
+        margin-top: 0;
     }
 
 }
@@ -86,3 +123,12 @@ body{
     display: flex;
     justify-content: center;
 }
+
+/*      WebKit      */
+
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: black; }
+::-webkit-scrollbar-track {  background-color: black;}
+::-webkit-scrollbar-track-piece { background-color: black;}
+::-webkit-scrollbar-thumb { max-height: 2px; background-color: #041032; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: black;}
