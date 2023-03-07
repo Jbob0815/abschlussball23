@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="de">
+<script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
 <head>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="index.css">
@@ -31,8 +32,23 @@
                     </div>
                 </div>
             </div>
-
             <div class="right">
+                <div class="kasten">
+                    <add-to-calendar-button
+                    name="Abchlussball"
+                    label="Zum Kalender hinzufügen"
+                    options="'Apple','Google'"
+                    location="Ort"
+                    startDate="2023-03-10"
+                    endDate="2023-03-10"
+                    startTime="10:15"
+                    endTime="23:30"
+                    timeZone="Europe/Berlin"
+                    buttonStyle="round"
+                    lightmode="dark"
+                    language="de"
+                  ></add-to-calendar-button>
+                </div>
                 <div class="survey kasten">
                     <span>Umfrage</span>
                     <p style="margin-inline:2rem;">Du möchtest über den Abend<br> mit entscheiden?</p>
