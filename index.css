@@ -15,7 +15,7 @@ html {
 body{
     align-content: center;
     background: url("/files/GalaxyBackground.jpg") ;
-    background-size: cover;
+    background-size: 50%;
     width: 100vw;
     overflow-x: clip;
     height: max(100vh,max-content);
@@ -81,9 +81,27 @@ body{
 }    
 
 .pdf{
-    height: auto;
-    width: 50%;
+    position: relative;
+    display: flex;
+    height: 2rem;
+    width: 9rem;
     background: hsla(0, 100%, 74%, 0.1);
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+}
+.pdf-svg {
+    position: relative;
+    height: 100%;
+    width: 2rem;
+    background: lightcoral;
+    overflow-x: hidden;
+}
+.icon {
+    height: 70%;
+    margin-inline: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .age {
@@ -104,7 +122,7 @@ body{
     height: 40vh;
     width: 100%;
     margin-top: 4rem;
-    font-size: 2rem;
+    font-size: inherit;
     background: hsla(224, 70%, 60%, 0.253);
 }
 
@@ -119,7 +137,7 @@ body{
 @media screen and (max-width: 1100px) {
 
     body{
-
+        background-size: contain;
     }
     .info {
         padding-inline: 20px;

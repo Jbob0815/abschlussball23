@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
-<script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Abschlussball</title>
 </head>
-<body>
+<body id="background" data-speed=".6">
     <div class="main">
         <div class="head">
             <div class="arch"></div>
@@ -22,12 +22,15 @@
                 <div class="info">
                     <p style="font-size: 4rem; text-align: left;font-family: Gloock, sans-serif">infos</p>
                     <span>Informationen zu dem Ball</span>
-                    <span> Anzahl Schüler - die kommen</span>
+                    <span> Anzahl Schüler - die kommen
+                    <br>Am <span>7.9.23</span> wollen wir mit allen Abschlussklassen feiern.
+                    </span>
                 </div>
                 <div class="age kasten">
                     <p>Du bist noch nicht 18?!</p>
                     <p>Füll diesen Zettel mit deinen Eltern Aus</p>
                     <div class="pdf kasten">
+                        <div class="pdf-svg"><img class="icon" src="files/download.svg"></div>
                         <a href="files/Einverstandniserklarung_Abschlussball.pdf" download="Einverständnisserklärung">PFD</a>
                     </div>
                 </div>
